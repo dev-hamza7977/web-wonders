@@ -64,7 +64,11 @@ color:rgb(255, 175, 77);
 }
 
 .heading-banner-2{
-color:rgb(0, 64, 107);
+    color:rgb(93, 0, 180);
+    text-shadow: -1px 1px 0 yellow, 
+    1px 1px 0 yellow, 
+    1px -1px 0 yellow, 
+    -1px -1px 0 yellow; 
     font-size:48px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
@@ -103,7 +107,7 @@ font-size: 3vh;
         }
 }
 
-.title-abt-us,.craetivity-title,.ux-title,.development-title{
+.title-abt-us,.craetivity-title,.ux-title,.development-title,.title-key-point,.services-title,.title-content-services{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     text-transform: uppercase;
@@ -116,19 +120,118 @@ text-shadow: -1px 1px 0 yellow,
 }
 
 .para-abt-us,.craetivity-para,.ux-para
-,.development-para{
+,.development-para,.points-key-point,.text-centent-services{
  font-size: 2.7vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(0, 80, 0);
 }
-@media only screen  and (max-width: 790px) {
 
+.rectangle-shape{
+    background: linear-gradient(196deg, rgba(232, 162, 255, 0.901) 0%, rgba(163, 237, 245, 0.825) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 40vh;
+    height: 135vh;
+    border: 2px solid none;
+    border-radius: 20px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.offer-banner-img{
+    border-radius: 20px;
+    border-radius: 20px;
+    width: 136.67vh;
+    height: 96.5vh;
+    position: absolute;
+    top: 272vh;
+    right: 32vh;
+}
+
+.title-key-point{
+    font-size: 4vh;
+}
+
+.points-key-point{
+    font-size: 3.5vh;
+}
+
+.keypoint-card{
+width: 35rem;
+position: absolute;
+top: 358vh;
+right: 55vh;
+}
+
+.offer-banner{
+    height: 160vh;
+}
+
+.services-title,.title-abt-us{
+font-size: 7vh;
+}
+
+.text-centent-services{
+    font-size: 4vh;
+}
+
+.services-quality-text{
+    font-size: 3vh;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: 15vh;
+}
+
+
+.our-services{
+    background: linear-gradient(196deg, rgba(162, 255, 215, 0.901) 0%, rgba(204, 163, 245, 0.825) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /* width: 40vh;
+    height: 135vh;
+    border: 2px solid none;
+    border-radius: 20px;
+} */
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fa-ser-vice{
+   color:rgb(93, 0, 180);
+    text-shadow: -1px 1px 0 yellow, 
+    1px 1px 0 yellow, 
+    1px -1px 0 yellow, 
+    -1px -1px 0 yellow; 
+}
+
+
+
+@media (max-width: 790px) {
 .square-shape {
     position: absolute;
     background-color: #f0f0f0;
-    width: 45vh;
+    width: 50vh;
     height: 35vh;
-    top: 56%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
@@ -185,8 +288,79 @@ font-size: 3vh;
 .ball-img-2 {
     width: 19.75vh;
     position: relative;
-    top: 24vh;
-    right: -21vh;
+    top: 44vh;
+    right: -1vh;
+}
+
+
+.rectangle-shape{
+    background: linear-gradient(196deg, rgba(232, 162, 255, 0.901) 0%, rgba(163, 237, 245, 0.825) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 14vh;
+    height: 85vh;
+    border: 2px solid none;
+    border-radius: 20px;
+    margin-top: 2ch;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.offer-banner-img{
+    border-radius: 20px;
+    border-radius: 20px;
+    width: 36.67vh;
+    height: 41.5vh;
+    position: absolute;
+    top: 395vh;
+    right: 12vh;
+}
+
+.title-key-point{
+    font-size: 2vh;
+}
+
+.points-key-point{
+    font-size: 2vh;
+}
+
+.keypoint-card{
+    width: 20rem;
+    position: absolute;
+    top: 430vh;
+    right: 2vh;
+}
+
+.banner-2{
+    height: 65vh;
+}
+
+.offer-banner{
+    height: 90vh;
 }
 
 }
+
+/* @media (max-width: 430px) {
+    .ball-img-2 {
+        width: 19.75vh;
+        position: relative;
+        top: 20vh;
+        right: -20vh;
+    }
+    
+} */
+
+
+
