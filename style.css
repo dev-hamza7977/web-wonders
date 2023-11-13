@@ -1,3 +1,7 @@
+body{
+    padding-top: 10vh;
+}
+
 .bg-img-1{
     background-image: url("images/banner-1.jpg");
     background-repeat: no-repeat;
@@ -160,6 +164,9 @@ text-shadow: -1px 1px 0 yellow,
 .title-key-point ,.if-you-text,.text-portfolio,.contact-quote{
     font-size: 4vh;
 }
+
+.active-tab {
+    background-color: #5caeffa1; /* Highlight color */}
 
 a{
     text-decoration: none;
