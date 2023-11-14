@@ -219,7 +219,7 @@
         <div class="row">
             <div class="col-lg-6"><img src="images/web-logo.png" class="img-fluid" alt="logo" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
-            <div class="col-lg-6 text-center" data-aos="fade-up" ata-aos-easing="ease-out-cubic"
+            <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000">
                 <h1 class="if-you-title text-center pt-2">If you need a website you are in the right place</h1>
                 <p class="if-you-text text-center pt-4 btn-lg">Your web presence begins here. Let us craft your online
@@ -229,33 +229,29 @@
                     life.</p>
                 <button class="btn btn-outline-success mt-4 button-quote" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">GET A QUOTE</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Quote Request Form</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Your form fields go here -->
-                                <input type="text" class="form-control mb-3" id="floatingInput" placeholder="Name">
-                                <input type="email" class="form-control mb-3" id="floatingInputemail"
-                                    placeholder="Email">
-                                <textarea class="form-control" id="floatingTextarea"
-                                    placeholder="Your Query"></textarea>
-                            </div>
-                            <div class="modal-footer">
-                                <!-- Update the submit button to trigger the WhatsApp message -->
-                                <button type="button" class="btn btn-primary" id="modalSubmitBtn">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Quote Request Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control mb-3" id="floatingInput" placeholder="Name">
+                    <input type="email" class="form-control mb-3" id="floatingInputemail" placeholder="Email">
+                    <textarea class="form-control" id="floatingTextarea" placeholder="Your Query"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <!-- Update the submit button to trigger the WhatsApp message -->
+                    <button type="button" class="btn btn-primary" id="modalSubmitBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="portfolio-sec p-xxl-5 mt-3" id="portfolio">
         <div class="row g-0 text-center">
