@@ -349,7 +349,7 @@ font-size: 3vh;
 
 
 .text-quote-para {
-    font-size: 18px;
+    font-size: 24px;
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -411,7 +411,7 @@ font-size: 3vh;
 }
 
 .keypoint-card{
-    width: 15rem;
+    width: 18rem;
     position: relative;
     top: -86vh;
     right: -6vh;
