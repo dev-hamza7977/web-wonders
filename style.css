@@ -19,6 +19,10 @@ body{
     
 }
 
+.need-sec{
+    margin-top: 85px;
+}
+
 .tag-line{
 font-size: 7vh;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -301,6 +305,8 @@ font-size: 7vh;
     margin-top: -52vh;
 }
 
+
+
 @media only screen and (max-width: 800px) {
 .square-shape {
     position: absolute;
@@ -407,7 +413,7 @@ font-size: 3vh;
 }
 
 .points-key-point{
-    font-size: 2.5vh;
+    font-size: 2.2vh;
 }
 
 .keypoint-card{
@@ -464,6 +470,10 @@ font-size: 2ch;
 .connect-sec{
     margin-top: 20px;
 
+}
+
+.need-sec{
+    margin-top: 0px;
 }
 
 }
