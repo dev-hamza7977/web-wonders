@@ -16,7 +16,13 @@
 </head>
 
 <body>
-    <section class="container">
+    <span class="welcome-sec fixed-top">
+        <a class="nav-link welcome-title mx-0" href="#"> <img src="images/web-logo-2.png"
+                class="welcome-logo text-start" alt="arabic-logo"> <span class="welcome-tit-text text-end px-2">
+                WELCOME TO WEB WONDERS</span>
+        </a>
+    </span>
+    <section class="container d-none d-lg-none d-xl-block">
         <div class="navbar fixed-top">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container">
@@ -35,8 +41,45 @@
                             <a class="nav-link active" href="#contact" onclick="highlightTab(this)">CONTACT US</a>
                         </div>
                     </div>
+                </div>
             </nav>
         </div>
+    </section>
+
+
+
+    <nav class="navbar-bottom" id="bottomNavbar">
+        <li class="nav-item home" onclick="toggleActive(this, 'home')">
+            <a class="nav-link" href="#home">
+                <i class="fas fa-home nav-icon"></i>
+                <div>HOME</div>
+            </a>
+        </li>
+        <li class="nav-item search" onclick="toggleActive(this, 'search')">
+            <a class="nav-link" href="#about-us">
+                <i class="far fa-user nav-icon"></i>
+                <div>ABOUT</div>
+            </a>
+        </li>
+        <li class="nav-item notifications" onclick="toggleActive(this, 'notifications')">
+            <a class="nav-link" href="#services">
+                <i class="fa-solid fa-shop nav-icon"></i>
+                <div>SERVICES</div>
+            </a>
+        </li>
+        <li class="nav-item profile" onclick="toggleActive(this, 'profile')">
+            <a class="nav-link" href="#portfolio">
+                <i class="fa-solid fa-user-tie nav-icon"></i>
+                <div>PORTFOLIO</div>
+            </a>
+        </li>
+        <li class="nav-item profile" onclick="toggleActive(this, 'profile')">
+            <a class="nav-link" href="#contact">
+                <i class="far fa-address-book nav-icon"></i>
+                <div>CONTACT</div>
+            </a>
+        </li>
+    </nav>
     </section>
 
     <section class="bg-img-1" id="home">
@@ -382,6 +425,20 @@
                 navbar.style.backgroundColor = 'rgba(255,255,255)'; // Return to initial color
             }
         };
+    </script>
+
+    <script>
+        // Add an event listener for the scroll event
+        window.addEventListener('scroll', function () {
+            var welcomeSec = document.querySelector('.welcome-sec');
+
+            // Add or remove the 'scrolled' class based on scroll position
+            if (window.scrollY > 0) {
+                welcomeSec.classList.add('scrolled');
+            } else {
+                welcomeSec.classList.remove('scrolled');
+            }
+        });
     </script>
 
     <script>

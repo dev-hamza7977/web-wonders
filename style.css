@@ -304,10 +304,19 @@ font-size: 7vh;
 .contact-us-sec{
     margin-top: -52vh;
 }
+.navbar-bottom,.welcome-sec{
+    display: none;
+    visibility: hidden;
 
-
+}
 
 @media only screen and (max-width: 800px) {
+
+body {
+ padding-bottom: 8vh;
+padding-top: 10vh;
+}
+
 .square-shape {
     position: absolute;
     background-color: #f0f0f0;
@@ -477,4 +486,96 @@ font-size: 2ch;
     margin-top: 0px;
 }
 
+.navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgb(155, 244, 231);
+    background: linear-gradient(-45deg, rgba(245, 222, 179, 0.538), rgba(251, 223, 255, 0.5), #fdffbb7d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-top: 5px solid rgb(255, 195, 83);
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 0vh 2vh 0vh 2vh;
+  }
+  
+  .nav-item {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-color: yellow;
+  }
+  
+  .nav-item.active {
+    border-radius: 100%;
+    color: blue;
+    /* background: yellow; */
+  }
+  
+  .nav-item.active.home {
+    color: rgb(151, 54, 254);
+    /* border: 3px solid rgb(255, 195, 83); */
+  }
+  
+  .nav-item.active.search {
+    color: rgb(151, 54, 254);
+  }
+  .nav-item.active.notifications {
+    color: rgb(151, 54, 254);
+  }
+  
+  .nav-item.active.profile {
+    color: rgb(151, 54, 254);
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: rgb(0, 127, 80);
+    font-size: 1.8vh;
+  }
+  
+  .nav-icon {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  .navbar-bottom{
+    /* display: none; */
+    visibility:visible;}
+
+    .welcome-sec{
+        display: inline;
+        visibility:visible;
+      
+      }
+      
+.welcome-sec{
+    border-top: 3px solid rgb(93, 0, 255);
+      
+    }
+
+    .welcome-logo{
+        width: 8vh;
+    }
+
+    .welcome-tit-text{
+        font-size: 2.5vh;
+    }
+
+    .welcome-sec {
+        background-color: transparent; /* Set your initial color here */
+        transition: background-color 0.5s ease; /* Add a smooth transition effect */
+    }
+    /* Define the color when the user has scrolled down */
+    .welcome-sec.scrolled {
+    background: linear-gradient(-45deg, rgba(245, 222, 179, 0.538), rgba(121, 190, 255, 0.5), #fdffbb7d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    backdrop-filter: blur(10px);
+    }
 }
