@@ -310,6 +310,36 @@ font-size: 7vh;
 
 }
 
+.modal-dialog{
+height: 80vh;
+width: 100%;
+}
+
+.modal-body{
+    background: linear-gradient(90deg, #ffde59 0%, #ff914d 100%);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        /* height: 100vh; */
+}
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+}
+
+
+.modal-video{
+height: 70vh;
+width: 100%;
+}
+
+
 @media only screen and (max-width: 800px) {
 
 body {

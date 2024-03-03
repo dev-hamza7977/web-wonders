@@ -285,6 +285,25 @@
         </div>
     </section>
 
+    <!-- <section class="new-offers container">
+        <h1 class="text-center title-portfolio"> <b>🎉 EXCITING OFFERS 🎉</b></h1>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -355,6 +374,27 @@
             </div>
         </div>
     </section>
+
+    <div class="modal" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">EXCITING OFFER !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video autoplay loop muted class="img-fluid modal-video">
+                        <source src="videos/offer-modal-vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section class="d-flex justify-content-between p-3 footer bg-black text-light">
         <div class="me-5">
@@ -447,6 +487,18 @@
             } else {
                 welcomeSec.classList.remove('scrolled');
             }
+        });
+    </script>
+
+    <script>
+        // When the page loads, open the modal
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
+
+        // When the user clicks on the close button, hide the modal
+        $('.modal .close').click(function () {
+            $('#myModal').modal('hide');
         });
     </script>
 
